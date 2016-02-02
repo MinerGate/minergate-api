@@ -32,6 +32,11 @@ _Method_: GET
 
 _URL_: /1.0/pool/profitRating
 
+_Example response_:
+```json
+['btc', 'qcn', 'xmr', 'bcn']
+```
+
 #### Top hashrate
 
 _Method_: GET
