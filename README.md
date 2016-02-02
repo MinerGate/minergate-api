@@ -103,3 +103,36 @@ _Example response_:
 _Method_: POST
 
 _URL_: /1.0/auth/login
+
+_Parameters_: login(your email), password, totp(2-step authorization token, not-required)
+
+_Example parameters_: 
+```json
+{
+  "login": "your_email@gmail.com",
+  "password": "your_password",
+  "totp": 123456
+}
+```
+
+_Example success response_:
+```json
+{
+  "token": "1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW"
+}
+```
+This token you should use in authorized requests.
+
+_Possible errors:
+```json
+{
+  "error": "WrongEmailOrPassword",
+  "message": "Email and Password pair did not authenticate."
+}
+``` 
+```json
+{
+  "error": "TotpRequired",
+  "message": "Two-factor authorization is enabled for this account. Please provide TOTP code."
+}
+```
