@@ -16,3 +16,6 @@
 | Infinium-8 | inf8 |
 | Bitcoin | btc |
 | Lytecoin | ltc |
+
+
+### API Methods
