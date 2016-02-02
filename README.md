@@ -18,4 +18,9 @@
 | Lytecoin | ltc |
 
 
-### API Methods
+### API non-authorized methods
+
+#### Profit rating
+
+Method - GET
+URL - /1.0/pool/profitRating
