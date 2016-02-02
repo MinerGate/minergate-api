@@ -23,4 +23,5 @@
 #### Profit rating
 
 Method - GET
+
 URL - /1.0/pool/profitRating
