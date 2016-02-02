@@ -20,6 +20,12 @@
 
 ### API non-authorized methods
 
+#### Methods list
+- [get profit currency rating](#rating)
+- [get top hasrates by currencies](#hashrate)
+- [get blockhain info](#blockchain)
+- [login](#login)
+
 #### Profit rating
 
 _Method_: GET
