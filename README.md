@@ -18,7 +18,7 @@ _Host_: https://api.minergate.com
 | Lytecoin | ltc |
 
 
-### API non-authorized methods
+### Non-authorized API methods
 
 #### Methods list
 - [get profit currency rating](#profit-rating)
@@ -134,5 +134,45 @@ _Possible errors_:
 {
   "error": "TotpRequired",
   "message": "Two-factor authorization is enabled for this account. Please provide TOTP code."
+}
+```
+
+
+
+### Authorized API methods
+
+#### Methods list
+- [get balance](#balance)
+- [get transfers](#profit-rating)
+- [get withdrawals](#top-hashrate)
+- [get workers](#workers)
+- [get mining stats](#s)
+- [get affiliate links](#blockchain-info)
+- [get affiliates](#login)
+- [get affiliate profits](#login)
+- [get invoices](#invoices)
+- [get invoice by token](#invoice)
+- [get nickname](#nickname)
+
+#### Balance
+
+_Method_: GET
+
+_URL_: /1.0/balance
+
+_Example response_:
+```json
+{
+  "aeon": "30.66592521533400000000",
+  "bcn": "30143.50038210000000000000",
+  "btc": "0.00800000000000000000",
+  "dsh": "2.80476725202",
+  "xdn": "4.53423417000000000000",
+  "fcn": "4.14526383581300000000",
+  "inf8": "24.88587286959600000000",
+  "ltc": "0.10015669000000000000",
+  "mcn": "16.42067126414000000000",
+  "xmr": "0.01750385351100000000",
+  "qcn": "13.59907377987700000000"
 }
 ```
