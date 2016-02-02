@@ -22,6 +22,6 @@
 
 #### Profit rating
 
-Method - GET
+_Method_: GET
 
-URL - /1.0/pool/profitRating
+_URL_: /1.0/pool/profitRating
