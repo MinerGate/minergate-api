@@ -43,6 +43,28 @@ _Method_: GET
 
 _URL_: /1.0/pool/top/hashrate
 
+_Example response_:
+```json
+{
+xmr: [
+    {
+      "hashrate": 536450.558066599,
+      "nickname": "nickname1"
+    },
+    {
+      "hashrate": 90208.49551531563,
+      "nickname": "nickname2"
+    },
+    {
+      "hashrate": 55373.55420204257,
+      "nickname": "nickname3"
+    }, ...
+  ], 
+bcn : {
+  ...
+}, ...}
+```
+
 #### Blockchain info
 
 _Method_: GET
