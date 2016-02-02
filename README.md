@@ -31,3 +31,21 @@
 _Method_: GET
 
 _URL_: /1.0/pool/profitRating
+
+#### Top hashrate
+
+_Method_: GET
+
+_URL_: /1.0/pool/top/hashrate
+
+#### Blockchain info
+
+_Method_: GET
+
+_URL_: /1.0/:cc/status
+
+#### Login
+
+_Method_: POST
+
+_URL_: /1.0/auth/login
