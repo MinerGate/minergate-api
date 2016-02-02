@@ -1,6 +1,6 @@
 # MinerGate API
 
-
+_Host_: https://api.minergate.com
 
 ### Currencies List
 | Currency Name | Currency Code (cc) |
