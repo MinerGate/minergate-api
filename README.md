@@ -123,7 +123,7 @@ _Example success response_:
 ```
 This token you should use in authorized requests.
 
-_Possible errors:
+_Possible errors_:
 ```json
 {
   "error": "WrongEmailOrPassword",
