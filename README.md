@@ -22,8 +22,8 @@
 
 #### Methods list
 - [get profit currency rating](#profit-rating)
-- [get top hasrates by currencies](#hashrate)
-- [get blockhain info](#blockchain)
+- [get top hasrates by currencies](#top-hashrate)
+- [get blockhain info](#blockchain-info)
 - [login](#login)
 
 #### Profit rating
