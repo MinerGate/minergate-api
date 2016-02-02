@@ -34,7 +34,7 @@ _URL_: /1.0/pool/profitRating
 
 _Example response_:
 ```json
-['btc', 'qcn', 'xmr', 'bcn']
+["btc", "qcn", "xmr", "bcn"]
 ```
 
 #### Top hashrate
@@ -46,7 +46,7 @@ _URL_: /1.0/pool/top/hashrate
 _Example response_:
 ```json
 {
-xmr: [
+"xmr": [
     {
       "hashrate": 536450.558066599,
       "nickname": "nickname1"
@@ -60,7 +60,7 @@ xmr: [
       "nickname": "nickname3"
     }, ...
   ], 
-bcn : {
+"bcn" : {
   ...
 }, ...}
 ```
