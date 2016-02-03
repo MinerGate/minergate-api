@@ -30,7 +30,7 @@ _Host_: https://api.minergate.com
 
 _Method_: GET
 
-_URL_: /1.0/pool/profitRating
+_Path_: /1.0/pool/profitRating
 
 _Example response_:
 ```json
@@ -41,7 +41,7 @@ _Example response_:
 
 _Method_: GET
 
-_URL_: /1.0/pool/top/hashrate
+_Path_: /1.0/pool/top/hashrate
 
 _Example response_:
 ```json
@@ -69,7 +69,7 @@ _Example response_:
 
 _Method_: GET
 
-_URL_: /1.0/:cc/status
+_Path_: /1.0/:cc/status
 
 _Example request_: /1.0/bcn/status
 
@@ -102,7 +102,7 @@ _Example response_:
 
 _Method_: POST
 
-_URL_: /1.0/auth/login
+_Path_: /1.0/auth/login
 
 _Parameters_: login(your email), password, totp(2-step authorization token, not-required)
 
@@ -158,7 +158,7 @@ _Possible errors_:
 
 _Method_: GET
 
-_URL_: /1.0/balance
+_Path_: /1.0/balance
 
 _Example response_:
 ```json
@@ -181,7 +181,7 @@ _Example response_:
 
 _Method_: GET
 
-_URL_: /1.0/transfers/:cc
+_Path_: /1.0/transfers/:cc
 
 _Exmaple request_: /1.0/transfers/xdn
 
