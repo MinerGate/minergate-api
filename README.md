@@ -15,7 +15,7 @@ _Host_: https://api.minergate.com
 | Aeon coin | aeon |
 | Infinium-8 | inf8 |
 | Bitcoin | btc |
-| Lytecoin | ltc |
+| Litecoin | ltc |
 
 
 ### Non-authorized API methods
