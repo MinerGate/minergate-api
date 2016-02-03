@@ -367,3 +367,20 @@ _Example response_:
   "timestamp": 1454496693669
 }
 ```
+
+#### Affilliate links
+
+_Method_: GET
+
+_Path_: /1.0/affiliate/links
+
+_Example response_:
+```json
+{
+  "7d14d06a612312349": "link",
+  "ad9e3352adde3f7123256556": "link2",
+  "f36f11e816381123b9b12295": "link3",
+  "37d05a536010d46a123e44f4": "link4",
+  "15e64ffe0aa0aa506dcg452a": "link5"
+}
+```
