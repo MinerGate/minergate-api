@@ -176,3 +176,61 @@ _Example response_:
   "qcn": "13.59907377987700000000"
 }
 ```
+
+#### Transfers
+
+_Method_: GET
+
+_URL_: /1.0/transfers/:cc
+
+_Exmaple request_: /1.0/transfers/xdn
+
+_Example response_:
+```json
+[
+  {
+    "cc": "xdn",
+    "amount": 700,
+    "fromUserId": "user1@gmail.com",
+    "toUserId": "user2@gmail.com",
+    "id": "c5d7b9d3-c2ce-4621-825c-58cbb5ea6eff",
+    "state": "finished",
+    "created": 1449161749429
+  },
+  {
+    "cc": "xdn",
+    "amount": 10,
+    "fromUserId": "user2@gmail.com",
+    "toUserId": "user18@gmail.com",
+    "id": "e81cde3a-9b67-4f5e-98ad-08ce7884e02a",
+    "state": "finished",
+    "created": 1448977022415
+  }
+]
+```
+
+_Exmaple request_: /1.0/transfers/
+
+_Example response_:
+```json
+[
+  {
+    "cc": "bcn",
+    "amount": 700,
+    "fromUserId": "user1@gmail.com",
+    "toUserId": "user2@gmail.com",
+    "id": "c5d7b9d3-c2ce-4621-825c-58cbb5ea6eff",
+    "state": "finished",
+    "created": 1449161749429
+  },
+  {
+    "cc": "inf8",
+    "amount": 10,
+    "fromUserId": "user2@gmail.com",
+    "toUserId": "user18@gmail.com",
+    "id": "e81cde3a-9b67-4f5e-98ad-08ce7884e02a",
+    "state": "finished",
+    "created": 1448977022415
+  }
+]
+```
