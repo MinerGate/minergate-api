@@ -77,30 +77,30 @@ _Method_: GET
 
 _Path_: /1.0/:cc/status
 
-_Example request_: /1.0/bcn/status
+_Example request_: /1.0/xmr/status
 
 _Example response_:
 ```json
 {
-  "hash": "1efd43e0d8ae9826278cfddffc2fe2e082c4683910766d7e0c28cb2e386b02b5",
-  "height": 930169,
+  "hash": "04ab3e8bb9c7724b27563cb9c5cab9d25f948f4579e57deb9b7a95b4b66e4acc",
+  "height": 940410,
   "orphan": false,
-  "timestamp": 1454422483,
-  "difficulty": 132222356,
-  "prevBlockHash": "e4542479ad51aa6aa61ae91eba62f060362cd4fdf4fc43c6763b4fb5ef5d3aa7",
-  "sizeMedian": 5009,
-  "blockSize": 14249,
-  "txCumulativeSize": 13603,
-  "txCount": 10,
-  "baseReward": 2163929365089,
+  "timestamp": 1454512169,
+  "difficulty": 795820297,
+  "prevBlockHash": "21af39326483b2f1d4556e0e363887e28aeb7e1753eec2e1e2ba4d984ecccae3",
+  "sizeMedian": 210,
+  "blockSize": 254,
+  "txCumulativeSize": 210,
+  "txCount": 1,
+  "baseReward": 7.193899826126,
   "penalty": 0,
-  "reward": 2163938365089,
-  "feeSumm": 9000000,
-  "alreadyGeneratedCoins": 17879485138156950000,
-  "cumulativeTxCount": 2315170,
+  "reward": 7.193899826126,
+  "feeSumm": 0,
+  "alreadyGeneratedCoins": 10903400.563529158,
+  "cumulativeTxCount": 1481736,
   "rewardBlocksWindow": 100,
   "fullRewardMaxBlockSize": 20000,
-  "instantHashrate": 1101852.9666666666
+  "instantHashrate": 13263671.616666667
 }
 ```
 
