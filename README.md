@@ -123,14 +123,6 @@ _Example parameters_:
 }
 ```
 
-_Example success response_:
-```json
-{
-  "token": "1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW"
-}
-```
-This token should be used in authorized requests.
-
 _Possible errors_:
 ```json
 {
@@ -145,6 +137,13 @@ _Possible errors_:
 }
 ```
 
+_Example success response_:
+```json
+{
+  "token": "1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW"
+}
+```
+This token should be used in authorized requests. Put it to the authorization request header to perform.
 
 
 ### Authorized API methods
