@@ -266,7 +266,7 @@ _Example response_:
     "amount": 1.9,
     "fee": 0.1,
     "paymentId": "paymentId",
-    "transactionIdHash": "5bb3f705-82e2-4b61-8651-7567571c72f3",
+    "transactionId": "5bb3f705-82e2-4b61-8651-7567571c72f3",
     "status": "finished",
     "created": 1451151685.785
   },
@@ -277,7 +277,7 @@ _Example response_:
     "amount": 1.9,
     "fee": 0.1,
     "paymentId": "paymentId",
-    "transactionIdHash": "5bb3f705-82e2-4b61-8651-7567571c72f3",
+    "transactionId": "5bb3f705-82e2-4b61-8651-7567571c72f3",
     "status": "finished",
     "created": 1451151685.785
   }
@@ -479,13 +479,12 @@ _Example response_:
     "address": "address",
     "comment": "Some text from invoice creator",
     "expiredDate": 1454273838471,
-    "token": "44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43",
+    "invoiceId": "44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43",
     "created": 1454101038531,
     "status": 7,
     "email": "test@gmail.com",
-    "payoutId": "bf0590ba-ec8c-45bb-a652-dd088f1963e0",
     "finished": 1454101196469
-  },
+  }, ...
 ]
 ```
 
@@ -495,7 +494,7 @@ _Summary_: Returns the specified invoice. Requires authorization.
 
 _Method_: GET
 
-_Path_: /1.0/invoice/:token
+_Path_: /1.0/invoice/:id
 
 _Example request_: /1.0/invoice/44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43
 
@@ -508,13 +507,12 @@ _Example response_:
   "address": "address",
   "comment": "Some text from invoice creator",
   "expiredDate": 1454273838471,
-  "token": "44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43",
+  "invoiceId": "44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43",
   "created": 1454101038531,
   "status": 7,
   "email": "test@gmail.com",
-  "payoutId": "bf0590ba-ec8c-45bb-a652-dd088f1963e0",
   "finished": 1454101196469
-},
+}
 
 ```
 
