@@ -234,3 +234,69 @@ _Example response_:
   }
 ]
 ```
+
+#### Withdrawals
+
+_Method_: GET
+
+_Path_: /1.0/withdrawals/:cc
+
+_Exmaple request_: /1.0/withdrawals/xdn
+
+_Example response_:
+```json
+[
+  {
+    "cc": "xdn",
+    "address": "address",
+    "transactionHash": "acaef20101873165b576ec44f0754c4847e5c16831b79810cff71a2eb7c00a38",
+    "amount": 1.9,
+    "fee": 0.1,
+    "paymentId": "paymentId",
+    "transactionIdHash": "5bb3f705-82e2-4b61-8651-7567571c72f3",
+    "status": "finished",
+    "created": 1451151685.785
+  },
+  {
+    "cc": "xdn",
+    "address": "address",
+    "transactionHash": "acaef20101873165b576ec44f0754c4847e5c16831b79810cff71a2eb7c00a38",
+    "amount": 1.9,
+    "fee": 0.1,
+    "paymentId": "paymentId",
+    "transactionIdHash": "5bb3f705-82e2-4b61-8651-7567571c72f3",
+    "status": "finished",
+    "created": 1451151685.785
+  }
+]
+```
+
+_Exmaple request_: /1.0/withdrawals
+
+_Example response_:
+```json
+[
+  {
+    "cc": "fcn",
+    "address": "address",
+    "transactionHash": "acaef20101873165b576ec44f0754c4847e5c16831b79810cff71a2eb7c00a38",
+    "amount": 1.9,
+    "fee": 0.1,
+    "paymentId": "paymentId",
+    "transactionIdHash": "5bb3f705-82e2-4b61-8651-7567571c72f3",
+    "status": "pending",
+    "created": 1451151685.785
+  },
+  {
+    "cc": "bcn",
+    "address": "address",
+    "transactionHash": "acaef20101873165b576ec44f0754c4847e5c16831b79810cff71a2eb7c00a38",
+    "amount": 1.9,
+    "fee": 0.1,
+    "paymentId": "paymentId",
+    "transactionIdHash": "5bb3f705-82e2-4b61-8651-7567571c72f3",
+    "status": "finished",
+    "created": 1451151685.785
+  }
+]
+```
