@@ -154,9 +154,9 @@ This token should be used in authorized requests. Put it to the authorization re
 - [get withdrawals](#withdrawals)
 - [get workers](#workers)
 - [get mining stats](#mining-stats)
-- [get affiliate links](#affilliate-links)
-- [get affiliates](#affilliates)
-- [get affiliate profit](#affilliate-profit)
+- [get affiliate links](#affiliate-links)
+- [get affiliates](#affiliates)
+- [get affiliate profit](#affiliate-profit)
 - [get invoices](#invoices)
 - [get invoice by token](#invoice)
 - [get nickname](#nickname)
@@ -385,7 +385,7 @@ _Example response_:
 }
 ```
 
-#### Affilliate links
+#### Affiliate links
 
 _Summary_: Returns the list of user’s affiliate links. Requires authorization. 
 
@@ -396,15 +396,15 @@ _Path_: /1.0/affiliate/links
 _Example response_:
 ```json
 {
-  "7d14d06a612312349": "link",
-  "ad9e3352adde3f7123256556": "link2",
-  "f36f11e816381123b9b12295": "link3",
-  "37d05a536010d46a123e44f4": "link4",
-  "15e64ffe0aa0aa506dcg452a": "link5"
+  "/a/7d14d06a612312349": "link",
+  "/a/ad9e3352adde3f7123256556": "link2",
+  "/a/f36f11e816381123b9b12295": "link3",
+  "/a/37d05a536010d46a123e44f4": "link4",
+  "/a/15e64ffe0aa0aa506dcg452a": "link5"
 }
 ```
 
-#### Affilliates
+#### Affiliates
 
 _Summary_: Returns the list of user’s affiliates. Requires authorization. 
 
@@ -417,16 +417,6 @@ _Example response_:
 {
   "test1@gmail.com": {
     "registered": 1426754165398,
-    "lastTotalMined": {
-      "bcn": 11345.64257845018,
-      "xmr": 0.45854918102170605,
-      "xdn": 14.910532342462847,
-      "mcn": 0.00118814373449432,
-      "qcn": 3030.3576666490317,
-      "fcn": 14.332406276508118,
-      "aeon": 3066.3647725068786,
-      "dsh": 403007.04601774085
-    },
     "profits": {
       "bcn": 34.91620052067053,
       "xmr": 0.0014406817930471406,
@@ -438,16 +428,16 @@ _Example response_:
       "dsh": 1244.935845946683
     },
     "lastProfit": 1454496377768,
-    "token": "d976f19wefr234fasdfd598"
+    "token": "/a/d976f19wefr234fasdfd598"
   },
   "test2@gmail.com": {
     "registered": 1426229844791,
-    "token": "d976f11231d598"
+    "token": "/a/d976f11231d598"
   },
 }
 ```
 
-#### Affilliate profit
+#### Affiliate profit
 
 _Summary_: Returns the user’s income from affiliates. Requires authorization.
 
