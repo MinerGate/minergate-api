@@ -500,3 +500,14 @@ _Example response_:
 },
 
 ```
+
+#### Invoice
+
+_Method_: GET
+
+_Path_: /1.0/profile/nickname
+
+_Example response_:
+```json
+"YourNickname"
+```
