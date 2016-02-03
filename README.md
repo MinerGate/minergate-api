@@ -322,3 +322,48 @@ _Example response_:
   }
 }
 ```
+
+#### Mining stats
+
+_Method_: GET
+
+_Path_: /1.0/mining/stats
+
+_Example response_:
+```json
+{
+  "bcn": {
+    "poolBalance": 191049661,
+    "minersCount": "1",
+    "hashrate": "65.405322258114126",
+    "hashrateRank": 1061,
+    "minerOnline": true,
+    "shares": {
+      "good": 827813,
+      "goodEq": 968780359,
+      "bad": 3469,
+      "badEq": 4033431,
+      "invalid": 0,
+      "invalidEq": 0
+    },
+    "ppsTotalMined": 111023.92139614478,
+    "pplnsTotalMined": 22249.54433594,
+    "blocksFound": 5,
+    "totalMined": 133273.4657320848
+  }, ...
+  "paymentModels": {
+    "bcn": "pps",
+    "fcn": "pps",
+    "dsh": "pplns",
+    "xmr": "pps",
+    "qcn": "pps",
+    "xdn": "pps",
+    "mcn": "pps",
+    "aeon": "pps",
+    "inf8": "pps",
+    "btc": "pps",
+    "ltc": "pps"
+  },
+  "timestamp": 1454496693669
+}
+```
