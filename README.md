@@ -149,7 +149,7 @@ _Possible errors_:
 - [get mining stats](#mining-stats)
 - [get affiliate links](#affilliate-links)
 - [get affiliates](#affilliates)
-- [get affiliate profits](#affilliate-profits)
+- [get affiliate profit](#affilliate-profit)
 - [get invoices](#invoices)
 - [get invoice by token](#invoice)
 - [get nickname](#nickname)
