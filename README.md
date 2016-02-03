@@ -300,3 +300,27 @@ _Example response_:
   }
 ]
 ```
+
+#### Workers
+
+_Method_: GET
+
+_Path_: /1.0/workers
+
+_Example response_:
+```json
+[
+  {
+  "bcn": {
+    "minersCount": 1,
+    "hashrate": 322.484387977974,
+    "hashrateRank": 256
+  },
+  "fcn": {
+    "minersCount": 1,
+    "hashrate": 322.484387977974,
+    "hashrateRank": 155
+  }
+}
+]
+```
