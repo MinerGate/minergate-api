@@ -129,7 +129,7 @@ _Example success response_:
   "token": "1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW"
 }
 ```
-This token you should use in authorized requests.
+This token should be used in authorized requests.
 
 _Possible errors_:
 ```json
@@ -195,7 +195,7 @@ _Method_: GET
 
 _Path_: /1.0/transfers/:cc
 
-_Exmaple request_: /1.0/transfers/xdn
+_Example request_: /1.0/transfers/xdn
 
 _Example response_:
 ```json
@@ -221,7 +221,7 @@ _Example response_:
 ]
 ```
 
-_Exmaple request_: /1.0/transfers/
+_Example request_: /1.0/transfers/
 
 _Example response_:
 ```json
@@ -255,7 +255,7 @@ _Method_: GET
 
 _Path_: /1.0/withdrawals/:cc
 
-_Exmaple request_: /1.0/withdrawals/xdn
+_Example request_: /1.0/withdrawals/xdn
 
 _Example response_:
 ```json
@@ -285,7 +285,7 @@ _Example response_:
 ]
 ```
 
-_Exmaple request_: /1.0/withdrawals
+_Example request_: /1.0/withdrawals
 
 _Example response_:
 ```json
