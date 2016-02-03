@@ -501,7 +501,7 @@ _Example response_:
 
 ```
 
-#### Invoice
+#### Nickname
 
 _Method_: GET
 
