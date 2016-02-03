@@ -28,6 +28,8 @@ _Host_: https://api.minergate.com
 
 #### Profit rating
 
+_Summary_: Returns the list of all currencies sorted by profitability.
+
 _Method_: GET
 
 _Path_: /1.0/pool/profitRating
@@ -38,6 +40,8 @@ _Example response_:
 ```
 
 #### Top hashrate
+
+_Summary_: Returns the lists of top 10 miners for each currency. 
 
 _Method_: GET
 
@@ -66,6 +70,8 @@ _Example response_:
 ```
 
 #### Blockchain info
+
+_Summary_: Returns the blockchain data of the specified currency. Returned values are as follows: chain height, last block timestamp, network difficulty, network hashrate, base reward.
 
 _Method_: GET
 
@@ -99,6 +105,8 @@ _Example response_:
 ```
 
 #### Login
+
+_Summary_: Authorizes the user and gives token for the following methods.
 
 _Method_: POST
 
@@ -156,6 +164,8 @@ _Possible errors_:
 
 #### Balance
 
+_Summary_: Returns the user’s balance. Requires authorization. 
+
 _Method_: GET
 
 _Path_: /1.0/balance
@@ -178,6 +188,8 @@ _Example response_:
 ```
 
 #### Transfers
+
+_Summary_: Returns the list of user’s transfers. Requires authorization. 
 
 _Method_: GET
 
@@ -236,6 +248,8 @@ _Example response_:
 ```
 
 #### Withdrawals
+
+_Summary_: Returns the list of user’s withdrawals for all the currencies or a specific currency if such parameter is set. Requires authorization.  
 
 _Method_: GET
 
@@ -303,6 +317,8 @@ _Example response_:
 
 #### Workers
 
+_Summary_: Returns the number of user’s active workers. Requires authorization.
+
 _Method_: GET
 
 _Path_: /1.0/workers
@@ -324,6 +340,8 @@ _Example response_:
 ```
 
 #### Mining stats
+
+_Summary_: Returns the user’s mining statistics. Requires authorization. 
 
 _Method_: GET
 
@@ -370,6 +388,8 @@ _Example response_:
 
 #### Affilliate links
 
+_Summary_: Returns the list of user’s affiliate links. Requires authorization. 
+
 _Method_: GET
 
 _Path_: /1.0/affiliate/links
@@ -386,6 +406,8 @@ _Example response_:
 ```
 
 #### Affilliates
+
+_Summary_: Returns the list of user’s affiliates. Requires authorization. 
 
 _Method_: GET
 
@@ -428,6 +450,8 @@ _Example response_:
 
 #### Affilliate profit
 
+_Summary_: Returns the user’s income from affiliates. Requires authorization.
+
 _Method_: GET
 
 _Path_: /1.0/affiliate/profit
@@ -450,6 +474,8 @@ _Example response_:
 ```
 
 #### Invoices
+
+_Summary_: Returns the list of user's invoices. Requires authorization.
 
 _Method_: GET
 
@@ -475,6 +501,8 @@ _Example response_:
 ```
 
 #### Invoice
+
+_Summary_: Returns the specified invoice. Requires authorization.
 
 _Method_: GET
 
@@ -502,6 +530,8 @@ _Example response_:
 ```
 
 #### Nickname
+
+_Summary_: Returns the user’s nickname. Requires authorization. 
 
 _Method_: GET
 
