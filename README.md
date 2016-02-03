@@ -148,8 +148,8 @@ _Possible errors_:
 - [get workers](#workers)
 - [get mining stats](#mining-stats)
 - [get affiliate links](#affilliate-links)
-- [get affiliates](#ffilliates)
-- [get affiliate profits](#ffilliate-profits)
+- [get affiliates](#affilliates)
+- [get affiliate profits](#affilliate-profits)
 - [get invoices](#invoices)
 - [get invoice by token](#invoice)
 - [get nickname](#nickname)
@@ -423,5 +423,28 @@ _Example response_:
     "registered": 1426229844791,
     "token": "d976f11231d598"
   },
+}
+```
+
+#### Affilliate profit
+
+_Method_: GET
+
+_Path_: /1.0/affiliate/profit
+
+_Example response_:
+```json
+{
+  "bcn": 48481.30996792437,
+  "xmr": 0.22784646878529005,
+  "xdn": 0.8658647284964952,
+  "mcn": 23.31826311843995,
+  "qcn": 11.443061561369651,
+  "fcn": 0.32156100510772107,
+  "aeon": 24.456462240551215,
+  "dsh": 6193.343139060691,
+  "ltc": 0.0001675684355892698,
+  "inf8": 3.279558343484024,
+  "btc": 0.00000503616312175371
 }
 ```
