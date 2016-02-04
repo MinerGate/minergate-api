@@ -32,7 +32,7 @@ _Summary_: Returns the list of all currencies sorted by profitability.
 
 _Method_: GET
 
-_Path_: /1.0/pool/profitRating
+_Path_: /1.0/pool/profit-rating
 
 _Example response_:
 ```json
@@ -158,7 +158,7 @@ This token should be used in authorized requests. Put it to the authorization re
 - [get affiliates](#affiliates)
 - [get affiliate profit](#affiliate-profit)
 - [get invoices](#invoices)
-- [get invoice by token](#invoice)
+- [get invoice by id](#invoice)
 - [get nickname](#nickname)
 
 #### Balance
@@ -481,7 +481,7 @@ _Example response_:
     "expiredDate": 1454273838471,
     "invoiceId": "44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43",
     "created": 1454101038531,
-    "status": 7,
+    "status": "finished",
     "email": "test@gmail.com",
     "finished": 1454101196469
   }, ...
@@ -494,9 +494,9 @@ _Summary_: Returns the specified invoice. Requires authorization.
 
 _Method_: GET
 
-_Path_: /1.0/invoice/:id
+_Path_: /1.0/invoices/:id
 
-_Example request_: /1.0/invoice/44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43
+_Example request_: /1.0/invoices/44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43
 
 _Example response_:
 ```json
@@ -509,7 +509,7 @@ _Example response_:
   "expiredDate": 1454273838471,
   "invoiceId": "44872a9e0dbb66fa5b5782cfef36f5b4bcdfba43",
   "created": 1454101038531,
-  "status": 7,
+  "status": "finished",
   "email": "test@gmail.com",
   "finished": 1454101196469
 }
