@@ -112,7 +112,7 @@ _Method_: POST
 
 _Path_: /1.0/auth/login
 
-_Parameters_: login (your email), password, totp (2-step authorization token, if needed)
+_Parameters_: login (your email), password, totp (2-step authorization token, required if 2-step authorization is enabled)
 
 _Example parameters_: 
 ```json
