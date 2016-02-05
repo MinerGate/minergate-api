@@ -143,10 +143,10 @@ _Example success response_:
   "token": "1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW1c2VySWQiOiJibGFja19sdWdhMkBtYW"
 }
 ```
-This token should be used in authorized requests. Put it to the authorization request header to perform.
-
 
 ### Authorized API methods
+
+To perform the authorized request, put the token to its header. The token value is generated during login process.
 
 #### Methods list
 - [get balance](#balance)
