@@ -127,7 +127,7 @@ _Possible errors_:
 ```json
 {
   "error": "WrongEmailOrPassword",
-  "message": "Email and Password pair did not authenticate."
+  "message": "Email and password did not match."
 }
 ``` 
 ```json
