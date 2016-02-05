@@ -5,6 +5,8 @@ _Host_: https://api.minergate.com
 ### Currencies List
 | Currency Name | Currency Code (cc) |
 | --- | --- |
+| Bitcoin | btc |
+| Litecoin | ltc |
 | Bytecoin | bcn |
 | Monero | xmr |
 | FantomCoin | fcn |
@@ -14,8 +16,6 @@ _Host_: https://api.minergate.com
 | Dashcoin | dsh |
 | Aeon coin | aeon |
 | Infinium-8 | inf8 |
-| Bitcoin | btc |
-| Litecoin | ltc |
 
 
 ### Non-authorized API methods
@@ -112,7 +112,7 @@ _Method_: POST
 
 _Path_: /1.0/auth/login
 
-_Parameters_: login (your email), password, totp (2-step authorization token, not required)
+_Parameters_: login (your email), password, totp (2-step authorization token, if needed)
 
 _Example parameters_: 
 ```json
@@ -350,7 +350,7 @@ _Example response_:
 ```json
 {
   "bcn": {
-    "poolBalance": 191049661,
+    "unconfirmedBalance": 191049661,
     "minersCount": "1",
     "hashrate": "65.405322258114126",
     "hashrateRank": 1061,
