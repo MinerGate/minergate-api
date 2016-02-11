@@ -151,6 +151,30 @@ _Example success response_:
 
 To perform the authorized request, put the token to its header. The token value is generated during login process.
 
+_Node.js authorized request example_:
+
+```node
+var request = require('request');
+var token = 'your_token_here'
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        return body;
+    } else {
+        console.log(response.statusMessage);
+    }
+}
+
+request.get({
+    url: 'https://api.minergate.com/1.0/transfers',
+    headers: {
+        'content-type': 'application/json',
+        'token': token
+    },
+    json: true
+}, callback);
+```
+
 #### Methods list
 - [get balance](#balance)
 - [get transfers](#transfers)
