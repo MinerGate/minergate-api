@@ -112,12 +112,15 @@ _Method_: POST
 
 _Path_: /1.0/auth/login
 
-_Parameters_: login (your email), password, totp (2-step authorization token, required if 2-step authorization is enabled)
 
-_Example parameters_: 
+_Content-Type_: application/json
+
+_Body_: email, password, totp (2-step authorization token, required if 2-step authorization is enabled)
+
+_Example body_: 
 ```json
 {
-  "login": "your_email@gmail.com",
+  "email": "your_email@gmail.com",
   "password": "your_password",
   "totp": 123456
 }
