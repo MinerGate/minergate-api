@@ -175,6 +175,25 @@ request.get({
 }, callback);
 ```
 
+_PHP authrozied request example_:
+
+```PHP
+<?php
+$token = 'your_token_here';
+
+if( $curl = curl_init() ) {
+    curl_setopt($curl, CURLOPT_URL, 'https://api.minergate.com/1.0/transfers');
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+        'Content-Type: application/json',
+        'token: ' . $token
+    ));
+    $out = curl_exec($curl);
+    echo $out;
+    curl_close($curl);
+}
+```
+
 #### Methods list
 - [get balance](#balance)
 - [get transfers](#transfers)
