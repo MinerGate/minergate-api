@@ -1,0 +1,308 @@
+
+
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Minergate API
+  description: |
+    *MinerGate is a mining pool created by a group of
+    cryptocoin enthusiasts.*
+
+    It is the first pool which
+    provides service for merged mining. This means that
+    while mining on our pool you can mine different
+    coins simultaniously without decrease of hashrate
+    for major coin.
+
+    **If you are interested in cooperation
+    drop a message to janikakouki@minergate.com.**
+
+    | Currency Name | Currency Code (cc) |
+    | --- | --- |
+    | Bitcoin | btc |
+    | Litecoin | ltc |
+    | Bytecoin | bcn |
+    | Monero | xmr |
+    | FantomCoin | fcn |
+    | QuazarCoin | qcn |
+    | DigitalNote | xdn |
+    | MonetaVerde | mcn |
+    | Dashcoin | dsh |
+    | Aeon coin | aeon |
+    | Infinium-8 | inf8 |
+host: api.minergate.com
+basePath: /1.0
+schemes:
+- https
+produces:
+- application/json
+securityDefinitions:
+   token:
+     type: apiKey
+     in: header
+     name: token
+     description: |
+       To perform the authorized request, put the token to its header.
+       The token value is generated during login process.
+parameters:
+  cc:
+    name: cc
+    in: path
+    required: true
+    type: string
+    description: |
+      Shorthand name for crypto currency.
+      e.g. Bitcoin = btc
+paths:
+  /affiliate/links:
+    get:
+      description: |
+        Returns the list of user’s affiliate links.
+        **Requires authorization.**
+      summary: Affiliate Links
+      tags:
+      - Affiliates
+      operationId: getAffiliateLinks
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          schema:
+            type: object
+          description: List of user’s affiliate links.
+  /affiliate/childrens:
+    get:
+      description: |
+        Returns the list of user’s affiliates.
+        **Requires authorization.**
+      summary: Affiliate Childrens
+      tags:
+      - Affiliates
+      operationId: getAffiliateChildren
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          schema:
+            type: object
+          description: List of user’s affiliates
+  /affiliate/profit:
+    get:
+      description: |
+        Returns the user’s income from affiliates.
+        **Requires authorization.**
+      summary: Affiliate Profit
+      tags:
+      - Affiliates
+      operationId: getAffiliateProfit
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          schema:
+            type: object
+          description: User’s income from affiliates.
+  /balance:
+    get:
+      description: |
+        Returns the user’s balance.
+        **Requires authorization.**
+      summary: Balance
+      tags:
+      - Wallet
+      operationId: getBalance
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          schema:
+            type: object
+          description: User's Balance
+  /transfers/{cc}:
+    get:
+      description: |
+        Returns the list of user’s transfers.
+        **Requires authorization.**
+      summary: Transfers
+      tags:
+      - Wallet
+      operationId: getTransfers
+      produces:
+      - application/json
+      security:
+        - token: []
+      parameters:
+      - $ref: '#/parameters/cc'
+      responses:
+        200:
+          description: List of user's transfers.
+  /withdrawals/{cc}:
+    get:
+      description: |
+        Returns the list of user’s withdrawals for 
+        all the currencies or a specific currency 
+        if such parameter is set. 
+        **Requires authorization.**
+      summary: Withdrawals by Blockchain
+      tags:
+      - Wallet
+      operationId: getWithdrawals
+      produces:
+      - application/json
+      security:
+        - token: []
+      parameters:
+      - $ref: '#/parameters/cc'
+      responses:
+        200:
+          description: List of user's withdrawals
+  /invoices:
+    get:
+      description: |
+        Returns the list of user's invoices.
+        **Requires authorization.**
+      summary: Invoices
+      tags:
+      - Payments
+      operationId: getInvoices
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          description: List of user's invoices.
+  /invoices/{INVOICE_ID}:
+    get:
+      description: |
+        Returns the specified invoice.
+        **Requires authorization.**
+      summary: Invoices by Id
+      tags:
+      - Payments
+      operationId: getInvoiceById
+      produces:
+      - application/json
+      security:
+        - token: []
+      parameters:
+      - name: INVOICE_ID
+        in: path
+        required: true
+        type: string
+        description: Id of Invoice
+      responses:
+        200:
+          description: Invoice
+  /profile/nickname:
+    get:
+      description: |
+        Returns the user’s nickname.
+        **Requires authorization.**
+      summary: Profile Nickname
+      tags:
+      - Profile
+      operationId: getProfileNickname
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          description: User's nickname
+  /mining/stats:
+    get:
+      description: |
+        Returns the user’s mining statistics.
+        **Requires authorization.**
+      summary: Mining Stats
+      tags:
+      - Mining
+      operationId: Mining Stats
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          description: Mining Statistics
+  /workers:
+    get:
+      description: |
+        Returns the number of user’s active workers.
+        **Requires authorization.**
+      summary: Workers
+      tags:
+      - Mining
+      operationId: getWorkers
+      produces:
+      - application/json
+      security:
+        - token: []
+      responses:
+        200:
+          description: User's active workers
+  /pool/profit-rating:
+    get:
+      description: |
+        Returns the list of all currencies
+        sorted by profitability.
+      summary: Pool Profit-Rating
+      tags:
+      - Public
+      operationId: getPoolProfitRating
+      produces:
+      - application/json
+      responses:
+        200:
+          description: List of currencies
+          schema:
+            type: array
+            items:
+              type: string
+  /pool/top/hashrate:
+    get:
+      description: |
+        Returns the lists of top 10 miners
+        for each currency.
+      summary: Pool Top Hashrate
+      tags:
+      - Public
+      operationId: getPoolTopHashrate
+      produces:
+      - application/json
+      responses:
+        200:
+          description: List of top miners
+          schema:
+            type: object
+  /{cc}/status:
+    get:
+      description: |
+        Returns the blockchain data of the
+        specified currency. Returned values
+        are as follows: chain height, last
+        block timestamp, network difficulty,
+        network hashrate, base reward.
+      summary: Blockchain Status
+      tags:
+      - Public
+      operationId: getBlockchainStatus
+      produces:
+      - application/json
+      parameters:
+      - $ref: '#/parameters/cc'
+      responses:
+        200:
+          description: Blockchain status
+          schema:
+            type: object
+
