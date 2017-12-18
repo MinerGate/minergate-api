@@ -120,9 +120,9 @@ _Body_: email, password, totp (2-step authorization token, required if 2-step au
 _Example body_: 
 ```json
 {
-  "email": "your_email@gmail.com",
-  "password": "your_password",
-  "totp": 123456
+  "email": "Raziqssyong90@gmail.com",
+  "password": "Farida223344",
+  "totp": gnerfirjsja3ww3b
 }
 ```
 
